@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GPS Locator</string>
+
+    <string name="settings_title">Введите телефонные номера и пароли отслеживаемых Вами трекеров.</string>
+    <string name="settings_target1username">Телефон трекера 1</string>
+    <string name="settings_target1pass">Пароль трекера 1</string>
+    <string name="settings_target2username">Телефон трекера 2</string>
+    <string name="settings_target2pass">Пароль трекера 2</string>
+    <string name="settings_enter">ОК</string>
+    <string name="settings_cancel">Отмена</string>
+
+    <string name="symbol_list">1234567890+</string>
+    <string name="no_sd"> Отсутствует SD-карта. Карты могут отображаться некорректно. </string>
+    
+</resources>

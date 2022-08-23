@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/child_selector"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"></org.osmdroid.views.MapView>
+
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/child_selector">
+
+        <ImageButton
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/ic_action_settings" />
+
+        <ImageButton
+            android:id="@+id/reloadButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/settingsButton"
+            android:background="@null"
+            android:src="@drawable/reload1" />
+
+        <ImageButton
+            android:id="@+id/reloadButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/reloadButton1"
+            android:background="@null"
+            android:src="@drawable/reload2" />
+
+        <!-- http://stackoverflow.com/questions/4100272/android-layout-marginbottom-doesnt-seem-to-work-properly-in-2-2-froyo -->
+
+        <View
+            android:id="@+id/horizontal_gap"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_toRightOf="@+id/settingsButton" />
+
+        <View
+            android:id="@+id/vertical_gap"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@+id/settingsButton" />
+    </RelativeLayout>
+
+</RelativeLayout>
